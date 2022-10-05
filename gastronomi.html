@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href= "gastronomilogo.png">
+	<title>Ege Gastronomi Topluluğu</title>
+</head>
+<body>
+
+	<div id="headerbox"></div>
+
+	<img class="getlogo" src="gerceklogo.png">
+
+	<img class="egelogo" src="ege.png">
+
+
+
+	<a href="https://www.google.com">
+		<img id="beyazburger" src="beyaz.png">
+	</a>
+
+	<a href="https://www.youtube.com">
+		<img id="beyazvegan" src="beyaz.png">
+	</a>
+
+	<a href="https://www.youtube.com">
+		<img id="beyazkore" src="beyaz.png">
+	</a>
+
+	<a href="https://www.youtube.com">
+		<img id="beyaztatli" src="beyaz.png">
+	</a>
+
+	<a href="https://www.youtube.com">
+		<img id="beyazurla" src="beyaz.png">
+	</a>
+
+	<a href="https://www.youtube.com">
+		<img id="beyaztemel" src="beyaz.png">
+	</a>
+
+
+	<p id="header">    SEÇTİĞİN YEMEKLERE GÖRE <br>HANGİ EGE GASTRONOMİ ETKİNLİĞİSİN?</p>
+
+	<p id="ilksoru"> ● Ege Üniversitesinde ilk yılın mı? Eski de olsan yeni de olsan<br> standımıza uğradığın için teşekkürlerrr ❤️</p>
+
+
+
+	<div class = "container1">
+		<button class = "btn1" onclick= 'Cevap1Evet()'>Buralarda Yeniyim</button>
+		<button class = "btn2" onclick = "Cevap1Hayir()" >Hep Buradaydım</button>
+	</div>
+
+	<p id="cevap1"> </p>
+
+
+
+	<p id="ikincisoru"> ● Genellikle yemek hazırlamaya vakit ayıramıyorum.<br>Pratik ve hızlı tüketilen yiyecekler hayatımı kolaylaştırıyor.<br>Dışardan yemek mekanı önermek benim işim.</p>
+
+	<div class = "container2">
+		<button class = "btn3" onclick = 'Cevap2Evet();changeImage2(document.getElementById("beyazburger"),"burger.jpg");'>Öğrenci hayatı dışarıdan yemeyi gerektirir </button>
+		<button class = "btn4" onclick = 'Cevap2Hayir();changeImage2(document.getElementById("beyazburger"),"beyaz.png");' >Hayır benlik degil</button>
+	</div>
+
+	<p id="cevap2"> </p>
+
+
+
+	<p id="ucuncusoru"> ● Etli yemekler fazla ağır geliyor,<br> genellikle yeşillik ve sebzelerle daha iyi anlaşıyorum.</p>
+
+	<div class = "container3">
+		<button class = "btn5" onclick = 'Cevap3Evet();changeImage3(document.getElementById("beyazvegan"),"vegan.jpg");' >Kesinlikle, hatta vejetaryenlik/veganlık felsefesi bana tam uyuyor.</button>
+		<button class = "btn6" onclick = 'Cevap3Hayir();changeImage3(document.getElementById("beyazvegan"),"beyaz.png");' >Özel bir hassasiyetim yok ama etsiz yapamam.</button>
+	</div>
+
+	<p id="cevap3"> </p>
+
+
+
+	<p id="dorduncusoru"> ● Uzak Doğu denince benim için akan sular durur.<br> Yeni lezzetler, tarifler ve tatları denemek benim işim.<br> Birçok bileşenin bir araya gelmesiyle<br>oluşan yemekler favorimdir.</p>
+
+	<div class = "container4">
+		<button class = "btn7" onclick = 'Cevap4Evet();changeImage4(document.getElementById("beyazkore"),"kore.jpg");'>Benden mi bahsediyorsunuzz</button>
+		<button class = "btn8" onclick = 'Cevap4Hayir();changeImage4(document.getElementById("beyazkore"),"beyaz.png");' >Uzak Doğu kültürüne pek ilgi duymuyorum ☹</button>
+	</div>
+
+	<p id ="cevap4"> </p>
+
+
+
+	<p id="besincisoru"> ● Damak tadın tatlıya mı daha yatkın tuzluya mı?</p>
+
+	<div class = "container5">
+		<button class = "btn9" onclick = 'Cevap5Evet();changeImage5(document.getElementById("beyaztatli"),"donut.jpg");'>Tatlısız günüm geçmez.</button>
+		<button class = "btn10" onclick = 'Cevap5Hayir();changeImage5(document.getElementById("beyaztatli"),"urfa.jpg");' >Tuzlu yemezsem<br>doyduğumu hissetmem.</button>
+	</div>
+
+	<p id ="cevap5"> </p>
+
+
+
+	<p id="altincisoru"> ● Klasiklerden gidelim… Yemek için yaşayanlardan mısın,<br> yaşamak için yiyenlerden mi?</p>
+
+	<div class = "container6">
+		<button class = "btn11" onclick = 'Cevap6Evet()' >Gece gündüz yemek düşünüyorum desemmm.</button>
+		<button class = "btn12" onclick = 'Cevap6Hayir()' >Kalori sayacımı doldurayım sadece, teşekkürler.</button>
+	</div>
+
+	<p id ="cevap6"> </p>
+
+
+	<p id="yedincisoru"> ● Ben tam bir ye-iç-gez insanıyım.<br> Farklı bölgelerin meşhur ve köklü mekanlarını<br> ve tatlarını keşfetmeyi oldukça seviyorum.<br>Uzun soluklu etkinlikler bana göre.</p>
+
+	<div class = "container7">
+		<button class = "btn13" onclick = 'Cevap7Evet();changeImage7(document.getElementById("beyazurla"),"urla.jpg");' >Gezip yemelik olaylar pek benlik değil.</button>
+		<button class = "btn14" onclick = 'Cevap7Hayir();changeImage7(document.getElementById("beyazurla"),"beyaz.png");' >Gezi etkinliklerine bayılırımm, yemek kısmı da varsa benden mutlusu yok.</button>
+	</div>
+
+	<p id ="cevap7"> </p>
+
+
+
+	<p id="sekizincisoru"> ● Yemek tadımının yanında mutfağın içerisinde olmak,<br> farklı kesim teknikleri öğrenmek ilgimi çekiyor.<br> Mutfak önlüğümü giyip hemen yemek yapımına geçelim.
+
+	<div class = "container8">
+		<button class = "btn15" onclick = 'Cevap8Evet();changeImage8(document.getElementById("beyaztemel"),"temelmutfak.jpg");' >Yemek yapımı ve hazırlanış kısmı ilgimi çekiyor.</button>
+		<button class = "btn16" onclick = 'Cevap8Hayir();changeImage8(document.getElementById("beyaztemel"),"beyaz.png");' >Mutfak kısmından ziyade yemek yeme kısmı bana daha çok uyuyor.</button>
+	</div>
+
+	<p id ="cevap8"> </p>
+
+
+
+	<script>
+		function Cevap1Evet() {
+			document.getElementById("cevap1").innerHTML = "Ege ve GET Ailesine Hoşgeldin!"
+		}
+
+		function Cevap1Hayir(){
+			document.getElementById("cevap1").innerHTML = "GET Ailesine Hoşgeldin!"
+		}
+
+	</script>
+
+	<script>
+		function Cevap2Evet(){
+			document.getElementById("cevap2").innerHTML = "Burger tadım etkinliği tam sana göre!"
+		} 
+
+		function Cevap2Hayir(){
+			document.getElementById("cevap2").innerHTML = "O zaman sonraki soruya!."
+		}
+
+		function changeImage2(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+
+	<script>
+		function Cevap3Evet(){
+			document.getElementById("cevap3").innerHTML = "Yeşil savunucularındansın demek , genellikle etle oluşturulan yemeklere oldukça başarılı alternatifler çıkaran ve vegan lezzetlerini çoğu kişinin beğendiği “Vegan Tadım Etkinliği” diyebilir miyiz sanaa."
+		} 
+
+		function Cevap3Hayir(){
+			document.getElementById("cevap3").innerHTML = "O zaman sonraki soruya!."
+		}
+
+		function changeImage3(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+
+	<script>
+		function Cevap4Evet(){
+			document.getElementById("cevap4").innerHTML = "Uzak Doğu mu dedinn? Farklı çeşit marinelerle oluşmuş çıtır tavuklar ve geçtiğimiz dönemin ses getiren Dalgona Cookie(Squid Game Cookie)’sini denediğimiz “Kore Mutfağı Tadım Etkinliği” başvuru listesinde ilk senin adını görecekmişiz gibi geliyor."
+		}
+
+		function Cevap4Hayir(){
+			document.getElementById("cevap4").innerHTML = "O zaman sonraki soruya!."
+		}
+
+		function changeImage4(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+
+	<script>
+		function Cevap5Evet(){
+			document.getElementById("cevap5").innerHTML = "Günlük tatlı dozumuzu Donut etkinliği ile dolduruyoruz"
+		}
+
+		function Cevap5Hayir(){
+			document.getElementById("cevap5").innerHTML = "Adana mı Urfa mııı?"
+		}
+
+		function changeImage5(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+
+	<script>
+		function Cevap6Evet(){
+			document.getElementById("cevap6").innerHTML = "Bu düşünceleri bizimle de paylaşmaya ne dersin?"
+		}
+
+		function Cevap6Hayir(){
+			document.getElementById("cevap6").innerHTML = "Yine de bir etkinliğimize katılmanı isteriz!"
+		}
+
+
+	</script>
+
+	<script>
+		function Cevap7Evet(){
+			document.getElementById("cevap7").innerHTML = "Sen bizim “Urla Etkinliği”mizsin desek pek de yanlış olmaz. Bir gün boyunca hem kültür hem de lezzet turu yaptığımız etkinliğimizde çok eğleneceğini düşünüyoruz."
+		}
+
+		function Cevap7Hayir(){
+			document.getElementById("cevap7").innerHTML = "Yine de böyle etkinlikleri kaçırmanı istemeyiz, umarız bi şans verirsin."
+		}
+
+		function changeImage7(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+
+
+	<script>
+		function Cevap8Evet(){
+			document.getElementById("cevap8").innerHTML = "Seni tanıtan etkinliğimiz mutfakta temel olarak kullanabileceğin reçeteleri kapsayan, farklı kesim tekniklerini ve mise en place kavramını özümseyebileceğin 5 haftalık Temel Mutfak Eğitimimiz. Önlükler giyilsin, yemekler yapılsın o zamannn."
+		}
+
+		function Cevap8Hayir(){
+			document.getElementById("cevap8").innerHTML = "Yine de böyle etkinlikleri kaçırmanı istemeyiz, umarız bi şans verirsin."
+		}
+
+		function changeImage8(domImg,srcImage){
+			var img = new Image();
+			img.onload = function(){
+				domImg.src = this.src;
+			}
+			img.src = srcImage;
+		}
+
+	</script>
+	
+</body>
+</html>
